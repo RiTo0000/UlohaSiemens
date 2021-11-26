@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Input.h"
 #include "Connection.h"
+#include "FindWays.h"
 
 
 int main()
@@ -20,5 +21,10 @@ int main()
     {
         cout << hladaneCesty[i]->getStart() << " " << hladaneCesty[i]->getEnd() << endl;
     }
+    cout << "\n\n\n" << endl;
+
+
+
+    FindWays* findWays = new FindWays(&connections, &hladaneCesty);
 }
 

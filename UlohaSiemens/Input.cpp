@@ -13,7 +13,7 @@ void Input::nacitajUdaje(vector<Connection*>* connections, vector<Connection*>* 
     ifstream file(nazovSuboru);
     string uncatConnections;
     getline(file, uncatConnections);
-    cout << uncatConnections << "\n" << endl;
+    //cout << uncatConnections << "\n" << endl;
     string tempUncatConnections = uncatConnections;
     string tempCutConnections;
     for (size_t i = 0; i < count(uncatConnections.begin(), uncatConnections.end(), ','); i++)
