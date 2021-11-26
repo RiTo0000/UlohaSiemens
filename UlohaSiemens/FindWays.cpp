@@ -1,19 +1,21 @@
 #include "FindWays.h"
 
-FindWays::FindWays(vector<Connection*>* connections, vector<Connection*>* hladaneCesty)
+FindWays::FindWays(vector<Connection*>* connections, vector<Connection*>* hladaneCesty, Output* out)
 {
+	this->pravidloBoloKontrolovane = false;
 	for (size_t i = 0; i < hladaneCesty->size(); i++)
 	{
-		if (findWayFromStartToEnd(hladaneCesty->at(i)->getStart(), hladaneCesty->at(i)->getEnd(), connections))
-			cout << "Yes" << endl;
-		else
-			cout << "No" << endl;
+		if (findWayFromStartToEnd(hladaneCesty->at(i)->getStart(), hladaneCesty->at(i)->getEnd(), connections)) 
+			out->writeLine("Yes");
+		else 
+			out->writeLine("No");
 		indexKontrolovanychPravidiel.clear();
 	}
 }
 
 FindWays::~FindWays()
 {
+
 }
 
 bool FindWays::findWayFromStartToEnd(string pStart, string pEnd, vector<Connection*>* connections)

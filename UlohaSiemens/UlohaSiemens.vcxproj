@@ -142,12 +142,14 @@
     <ClCompile Include="Connection.cpp" />
     <ClCompile Include="FindWays.cpp" />
     <ClCompile Include="Input.cpp" />
+    <ClCompile Include="Output.cpp" />
     <ClCompile Include="UlohaSiemens.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Connection.h" />
     <ClInclude Include="FindWays.h" />
     <ClInclude Include="Input.h" />
+    <ClInclude Include="Output.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

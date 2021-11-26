@@ -11,8 +11,8 @@ class Input
 public:
 	Input();
 	~Input();
+	bool isAccesible(string nazovSuboru);
 	void nacitajUdaje(vector<Connection*>* connections, vector<Connection*>* hladaneCesty, string nazovSuboru);
 private:
-	wifstream subor;
 };
 

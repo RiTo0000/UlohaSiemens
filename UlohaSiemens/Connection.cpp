@@ -8,6 +8,8 @@ Connection::Connection(string pStart, string pEnd)
 
 Connection::~Connection()
 {
+	this->start = "";
+	this->end = "";
 }
 
 string Connection::getStart()
